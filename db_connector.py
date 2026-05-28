@@ -1,11 +1,13 @@
-import mysql.connector
+import mysql.connector, os
 
-connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="YOUR_PASSWORD",
-    database="inventory_db"
-)
+try:
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="YOUR_PASSWORD",
+        database="inventory_db"
+    )
+    cursor = connection.cursor()
 
-cursor = connection.cursor()
-
+except mysql.connector.Error as error:
+    print(f"Database connection failed: {error}")

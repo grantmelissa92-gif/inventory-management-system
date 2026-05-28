@@ -2,6 +2,10 @@
 
 A Python and MySQL-based inventory system for managing IT equipment records.
 
+## Project Purpose
+
+This system simulates an IT equipment inventory tool used in organizations to track, manage and update hardware assets efficiently.
+
 ## Features
 - Add equipment
 - View equipment
